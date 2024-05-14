@@ -5,11 +5,11 @@
         <div class="login-form">
             <div class="sign-in-htm">
                 <div class="group">
-                    <label for="user" class="label">Username</label>
+                    <label for="user" class="label">Username <span class="required-symbol">*</span></label>
                     <input id="user" type="text" class="input">
                 </div>
                 <div class="group">
-                    <label for="pass" class="label">Password</label>
+                    <label for="pass" class="label">Password<span class="required-symbol">*</span></label>
                     <input id="pass" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
@@ -18,20 +18,32 @@
             </div>
             <div class="sign-up-htm">
                 <div class="group">
-                    <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input">
+                    <label for="username" class="label">Username<span class="required-symbol">*</span></label>
+                    <input id="username" type="text" class="input" required>
                 </div>
                 <div class="group">
-                    <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
+                    <label for="email" class="label">Email<span class="required-symbol">*</span></label>
+                    <input id="email" type="email" class="input" required>
                 </div>
                 <div class="group">
-                    <label for="pass" class="label">Repeat Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
+                    <label for="pass" class="label">Password<span class="required-symbol">*</span></label>
+                    <input id="pass" type="password" class="input" required>
                 </div>
                 <div class="group">
-                    <label for="pass" class="label">Email Address</label>
-                    <input id="pass" type="text" class="input">
+                    <label for="phone" class="label">Phone Number<span class="required-symbol">*</span></label>
+                    <input id="phone" type="text" class="input" required>
+                </div>
+                <div class="group">
+                    <label for="role" class="label">Role<span class="required-symbol">*</span></label>
+                    <select id="role" class="input" required>
+                        <option value="">Select a role</option>
+                        <option value="owner">Owner</option>
+                        <option value="supplier">Supplier</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="image" class="label">Select File<span class="required-symbol">*</span></label>
+                    <input id="image" type="file" class="input" accept="image/*" required>
                 </div>
                 <div class="group">
                     <input type="submit" class="button" value="Sign Up">
